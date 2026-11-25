@@ -1,0 +1,6 @@
+/* Tailwind v4 typography tokens — font families only. */
+@theme {
+  /* ---- Families ---- */
+  --font-display: var(--font-cabinet-grotesk), system-ui, sans-serif;
+  --font-body: var(--font-manrope), system-ui, sans-serif;
+}

@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import "../styles/theme-colors.css";
+@import "../styles/theme-typography.css";
+@import "../styles/theme-motion.css";
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    /* `clip` (not `hidden`) trims stray horizontal bleed without creating a
+       scroll container, so `position: sticky` sections keep working. */
+    overflow-x: clip;
+  }
+
+  /* Native smooth scrolling only when Lenis isn't driving the page. */
+  html:not(.lenis) {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-bg-white);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, figure {
+    margin: 0;
+  }
+
+  /* Figma sets `word-wrap: break-word` on every text node */
+  h1, h2, h3, h4, h5, h6, p, span {
+    overflow-wrap: break-word;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  ::selection {
+    background-color: var(--color-cta);
+    color: var(--color-on-cta);
+  }
+
+  /* Fallback ring so every focusable element stays visible even if a component
+     forgets its utility classes. Burgundy reads on the cream surfaces; dark
+     sections override the colour with `outline-on-brand`. */
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  /* Applied to a GSAP scope so content can't flash before its reveal runs */
+  .reveal-hidden {
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* The intro curtain only un-hides when the head gate opts in on a first visit.
+   Deliberately unlayered so it outranks Tailwind's `hidden` utility. The timed
+   animation is a failsafe: if the script never runs, the curtain still clears
+   itself instead of trapping the page. */
+[data-preload="on"] .preloader {
+  display: block;
+  animation: preloader-failsafe 0.4s linear 2.5s forwards;
+}
+
+@keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes preloader-failsafe { to { opacity: 0; visibility: hidden; } }
+
+/* Idle loops for the case-study chapter icons (see WorkIcons.tsx). */
+@media (prefers-reduced-motion: no-preference) {
+  .icon-idle {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: icon-breathe 2.8s ease-in-out 1.6s infinite;
+  }
+}
+@keyframes icon-breathe {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.35); opacity: 0.7; }
+}

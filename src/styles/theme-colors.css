@@ -1,0 +1,40 @@
+/* Tailwind v4 color tokens — Burgundy / Charcoal / Gold / Cream palette. */
+@theme {
+  /* ---- Brand ---- */
+  --color-brand: #6b1a2b;         /* Primary — Burgundy */
+  --color-brand-hover: #571524;
+  --color-brand-active: #43101c;
+  --color-accent: #c9a24b;        /* Accent — Gold (use on dark surfaces / decoration) */
+  --color-accent-hover: #b48d38;
+  --color-cta: #7d2335;
+  --color-cta-hover: #571524;
+
+  /* ---- Backgrounds ---- */
+  --color-bg: #f6efe6;            /* Cream */
+  --color-bg-white: #fffbf6;
+  --color-bg-deep: #1f1f24;       /* Secondary — Charcoal */
+
+  /* ---- Surfaces ---- */
+  --color-surface: #ece2d4;
+  --color-surface-hover: #e4d8c7;
+  --color-surface-dark: #2a2a30;  /* Card surface on dark sections */
+
+  /* ---- Text ---- */
+  --color-ink: #1f1f24;           /* Charcoal */
+  --color-ink-soft: #4a4650;
+  --color-ink-muted: #6b6670;
+  --color-ink-faint: #a9a3a8;
+  --color-on-brand: #f6efe6;      /* Cream on dark */
+  --color-on-cta: #ffffff;
+
+  /* ---- Borders ---- */
+  --color-line: #e2d6c6;
+  --color-line-strong: #b9a58a;
+
+  --color-hair: rgb(107 26 43 / 0.2);
+  --color-hair-light: rgb(246 239 230 / 0.14);
+  --color-hair-warm: rgb(226 214 198 / 0.5);
+  --color-hair-dark: rgb(31 31 36 / 0.3);
+  --color-hair-card: rgb(226 214 198 / 0.2);
+  --color-hair-logo: rgb(107 26 43 / 0.5);
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="220" viewBox="0 0 440 220" role="img" aria-label="Stability, a personal finance Android app live on Google Play"><title>Stability, a personal finance Android app live on Google Play</title><style>text{font-family:'Segoe UI Variable Display','Segoe UI','SF Pro Display',-apple-system,BlinkMacSystemFont,Inter,Helvetica,Arial,sans-serif}.mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}.ping{transform-box:fill-box;transform-origin:center;animation:ping 1.8s ease-out infinite}@keyframes ping{to{transform:scale(3);opacity:0}}.breathe{animation:br 5s ease-in-out infinite alternate}@keyframes br{to{opacity:.55}}.sweep{animation:sw 4.5s cubic-bezier(.65,0,.35,1) infinite}@keyframes sw{to{transform:translateX(680px)}}.nudge{animation:nd 1.6s ease-in-out infinite}@keyframes nd{50%{transform:translate(2px,-2px)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<defs><radialGradient id="g" cx=".9" cy=".05" r=".75"><stop offset="0" stop-color="#6b1a2b" stop-opacity="0.55"/><stop offset="1" stop-color="#6b1a2b" stop-opacity="0"/></radialGradient>
+<clipPath id="c"><rect width="440" height="220" rx="22"/></clipPath></defs>
+<g clip-path="url(#c)"><rect width="440" height="220" fill="#1f1f24"/><rect class="breathe" width="440" height="220" fill="url(#g)"/>
+<rect class="sweep" x="-120" y="0" width="120" height="2" fill="#c9a24b"/></g>
+<rect x=".5" y=".5" width="439" height="219" rx="21.5" fill="none" stroke="#f6efe6" stroke-opacity=".09"/>
+<text x="350" y="204" font-size="78" font-weight="800" fill="none" stroke="#f6efe6" stroke-opacity=".07" text-anchor="end">01</text>
+<text x="28" y="42" font-size="10.5" font-weight="700" letter-spacing="1.6" fill="#c9a24b">FINTECH &#183; LIVE ON GOOGLE PLAY</text>
+<g><rect x="356" y="24" width="60" height="22" rx="11" fill="#10b981" fill-opacity=".16" stroke="#34d399" stroke-opacity=".5"/><circle class="ping" cx="371" cy="35" r="3.5" fill="#34d399"/><circle cx="371" cy="35" r="3.5" fill="#34d399"/><text x="381" y="39" font-size="10" font-weight="800" letter-spacing="1" fill="#6ee7b7">LIVE</text></g>
+<text x="28" y="80" font-size="23" font-weight="800" letter-spacing="-.5" fill="#f6efe6">Stability</text>
+<text x="28" y="112" font-size="13.5" fill="#f6efe6" fill-opacity=".68">Personal finance app to track and</text><text x="28" y="131" font-size="13.5" fill="#f6efe6" fill-opacity=".68">manage money, published</text><text x="28" y="150" font-size="13.5" fill="#f6efe6" fill-opacity=".68">on Android.</text>
+<text x="28" y="190" font-size="13.5" font-weight="700" fill="#c9a24b">Get it on Google Play</text>
+<circle cx="392" cy="185" r="18" fill="#c9a24b"/><g class="nudge"><path d="M386 191l12-12M389 179h9v9" fill="none" stroke="#1f1f24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
